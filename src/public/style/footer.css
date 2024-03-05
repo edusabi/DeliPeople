@@ -1,0 +1,42 @@
+footer{
+    display: flex;
+    height: 20vh;
+    align-items: center;
+    justify-content: space-around;
+    color: #fff;
+    background-color: #00008b;
+}
+
+.insta{
+    display: flex;
+    gap: 20px;
+    flex-direction: column;
+}
+
+.insta a{
+    color: #fff;
+    font-size: 1.5rem ;
+    text-align: center;
+}
+
+.footerInfo{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+@media (max-width: 700px){
+    footer{
+        justify-content: space-between;    
+    }
+    
+    .insta{
+        margin-left: 10px;
+        max-width: 250px;
+    }
+
+    .footerInfo{
+        margin-right: 10px;
+        margin-bottom: 30px;
+    }
+}

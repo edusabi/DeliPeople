@@ -1,0 +1,173 @@
+.pre-carregamento{
+    width: 100%;
+    min-height: 100vh;
+    position: fixed;
+    background-color: #120f0f;
+    top: 0;
+    left: 0;
+
+    transition: 0.5s;
+     
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #fff;
+    gap: 2rem;
+    flex-direction: column;
+}
+
+.carregamento{
+    width: 60px;
+    height: 60px;
+    background-color: transparent;
+    display: block;
+    border: 10px solid #00008b;
+    border-radius: 50%;
+    border-top: 12px solid transparent ;
+
+
+    animation: loading 1s ease-in-out infinite ;
+}
+
+@keyframes loading{
+    0%{
+        transform: rotate(0deg);
+    }
+    
+    100%{
+        transform: rotate(360deg);
+    }
+}
+
+.login a{text-decoration: none;}
+
+.containerLogin{
+    height: 90vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.login{
+    gap: 3rem;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: top;
+    margin: 2rem 0;
+    flex-direction: column;
+}
+
+.login button{
+    cursor: pointer;
+    font-size: 1.3rem;
+    gap: 5px;
+    border: none;
+    background-color: #00008b;
+    color: #fff;
+    display: flex;
+    padding: 1rem 2rem;
+    border-radius: 2px;
+    justify-content: center;
+    align-items: center;
+}
+
+#google{
+    width: 20px;
+}
+
+/* cadastro */
+.empresa{
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+}
+
+.empresa textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
+
+.empresa form{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.empresa form button{
+    cursor: pointer;
+    border: none;
+    background-color: #00008b;
+    color: #fff;
+    letter-spacing: 1px;
+    padding: .7rem 0;
+}
+
+.empresa form input , textarea, select{
+    border: none;
+    padding: 5px;
+    width: 400px;
+}
+
+.proletario{
+    color: #fff;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    display: flex;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+}
+
+.proletario textarea:focus, input:focus, select:focus {
+    box-shadow: 0 0 0 0;
+    border: 0 none;
+    outline: 0;
+} 
+
+.proletario form{
+    margin-top: 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.proletario form button{
+    cursor: pointer;
+    border: none;
+    background-color: #00008b;
+    color: #fff;
+    letter-spacing: 1px;
+    padding: .5rem 0;
+}
+
+.proletario form input , textarea, select{
+    border: none;
+    padding: 5px;
+    width: 400px;
+}
+
+@media (max-width: 700px){
+    .proletario{
+        margin-top: 7rem;
+        margin-bottom: 7rem;
+    }
+
+    .proletario form input , textarea, select{
+        width: 300px;
+    }
+
+    .empresa{
+        margin-top: 7rem;
+        margin-bottom: 7rem;
+    }
+
+    .empresa form input , textarea, select{
+        width: 300px;
+    }
+
+}

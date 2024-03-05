@@ -1,0 +1,44 @@
+<header>
+
+<div class="header-container">
+
+<a href="/"><h1 class="logo">DeliPeople</h1></a>
+
+<div class="itens">
+
+    <ul class="homeSobre">
+        <% if(user){%>
+            <a href="/"><li>Home</li></a>
+            <a href="/users/sobre"><li>Sobre</li></a>            
+            <%}else{ %>
+                <a href="/users/sobre"><li>Sobre</li></a>                    
+            <%} %>
+    </ul>
+    
+    <ul class="itensLr">
+
+        <% if(user){%>
+            <div>
+                <a href="/users/perfil" id="perfil">
+                    <li>Perfil</li>
+                    <img src="<%- user.avatar  %>" alt="" id="avatar">
+                </a>
+            </div>
+
+            <a href="/auth/logout" id="sair"><li>Sair</li><ion-icon name="exit-outline"></ion-icon></a>
+            
+            
+        <%} %>
+    </ul>
+</div>
+
+<div class="nav-bar">
+    <div class="line1"></div>
+    <div class="line2"></div>
+    <div class="line3"></div>
+</div>
+
+</div>
+
+</header>
+

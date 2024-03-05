@@ -1,0 +1,21 @@
+<%- include('../partials/head') %>
+<%- include('../partials/navbar') %>
+
+
+<h1 class="titleV">Trabalhadores</h1>
+
+<% proletario.forEach(pessoas => {%>
+
+<div class="pessoas">
+    <p>Nome: <%- pessoas.nome %></p>
+    <p>Estado: <%- pessoas.estado %></p>
+    <div>
+        <a href="/users/contratar/:<%-pessoas._id%>"> <button class="btnsTC">Dar uma olhada</button></a>
+    </div>
+</div>
+
+<% }); %>
+
+<%- include('../partials/footer') %>   
+
+<script src="/js/navbar.js"></script>

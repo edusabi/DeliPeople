@@ -1,0 +1,62 @@
+.containerChat{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.containerInside{
+    width: 60vw;
+    height: 80vh;
+    padding: 1rem;
+    background-color: aliceblue;
+    border-radius: 3px;
+    margin-top: 3rem;
+}
+
+.messages{
+    overflow-y: scroll;
+    padding: 1rem .5rem;
+    height: 76vh;
+}
+
+.enviarMessage{
+    margin-top: 1rem;
+    margin-bottom: 3rem;
+}
+
+.enviarMessage form{
+    width: 40vw;
+    display: flex;
+    gap: .5rem;
+    flex-direction: column;
+}
+
+.enviarMessage form input{
+    padding: .4rem .3rem;
+}
+
+.enviarMessage form button{
+    cursor: pointer;
+    padding: .4rem 0;
+    background-color: #00008b;
+    border: none;
+    color: #fff;
+}
+
+
+@media (max-width: 700px){
+    
+    .containerInside{
+        width: 90vw;
+        height: 55vh;
+    }
+    
+    .messages{
+        height: 50vh;
+    }
+    
+    .enviarMessage form{
+        width: 70vw;
+    }
+}

@@ -1,0 +1,132 @@
+header{
+    list-style: none;
+    background-color: #00008b;
+    height: 12vh;
+}
+
+.header-container{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+header a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.itens{
+    display: flex;
+}
+
+.logo{
+    letter-spacing: 3px;
+    margin-top: 20px; 
+} 
+
+.itens ul{
+    margin-top: 30px;
+    display: flex;
+}
+
+.nav-bar{
+    display: none;
+    cursor: pointer;
+}
+
+.nav-bar div {
+    border-radius: 1px;
+    width: 32px;
+    height: 2px;
+    background: #fff;
+    margin: 8px;
+    transition: .4s;
+}
+
+.itens ul a{
+    margin: 0 1rem;
+}
+
+.itens ul li{
+    list-style: none;
+    
+}
+
+#perfil{
+    margin-top: -11px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: .5rem;
+}
+
+#avatar{
+    width: 40px;
+    border-radius: 50%;
+}
+
+#sair{
+    display: flex;
+    margin-top: -12px;
+    align-items: center;
+}
+
+@media (max-width: 700px){
+
+    .logo{
+        position: absolute;
+        top: 10px;
+        left: 20px;
+    }
+    
+    .itens{
+        display: block;
+        margin-top: 100px;
+        background-color: #00008b;
+        height: 100vh;
+        width: 100vw;  
+
+        font-size: 3rem;
+
+        transform: translateX(-100%);
+        
+        z-index: 1;
+        padding: 7rem 0;
+        transition: .7s;
+    }
+    
+    .itens.ativo{
+        transform: translateX(0%);
+    }
+    
+    #perfil{
+        justify-content: start;
+    }
+    
+    #avatar{
+        width: 80px;
+
+    }
+    
+    .homeSobre{
+        flex-direction: column;
+        gap: 5rem;
+        margin-bottom: 5rem;
+        
+    }
+    
+    .itensLr{
+        flex-direction: column;
+        gap: 5rem;
+    }
+    
+    
+    .nav-bar{
+        margin-top: 20px;
+        display: block;
+
+        position: absolute;
+        top: 10px;
+        right: 20px;
+    }
+}

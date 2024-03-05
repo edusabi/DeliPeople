@@ -1,0 +1,44 @@
+<%- include('../partials/head') %>
+<%- include('../partials/navbar') %>
+
+<div class="empresa">
+    <h1>Cadastro da empresa</h1>
+    <form action="/users/cadastroEmpresa" method="POST">
+        <label for="name"><input type="text" name="nome" placeholder="Nome da empresa" required></label>
+
+        <label for="">
+            <select name="estado" id="estado"  required>
+                <option value="">Escolha um estado</option>
+            </select>
+        </label>
+
+        <label for="">
+            <select name="cidade" id="cidade" required>
+                <option value="">Escolha uma cidade</option>
+            </select>
+        </label>
+
+        <label for=""><input type="text" name="rua" placeholder="Rua da empresa" required></label>
+
+        <label for=""><input type="number" name="numero" placeholder="Nº residencial" required></label>
+
+        <label for=""><input type="email" name="email" placeholder="E-mail da empresa" value="<%- user.email %>"></label>
+
+        <label for=""><input type="text" name="telefone" maxlength="15" onkeyup="handlePhone(event)" placeholder="Telefone para contato" required></label>
+
+        <textarea  name="servicos" placeholder="Quais tipos de serviços possuem nesta empresa..." required cols="50" rows="10"></textarea>
+
+        <button type="submit">Enviar cadastro</button>
+    </form>
+</div>
+
+<script src="/js/estados.js"></script>
+<script src="/js/tell.js"></script>
+
+<script src="/js/navbar.js"></script>
+
+<%- include('../partials/footer') %>
+
+
+</body>
+</html>

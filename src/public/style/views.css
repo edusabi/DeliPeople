@@ -1,0 +1,80 @@
+.viewProletario{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+    height: 70vh;
+    color: #fff;
+}
+
+.viewEmpresa{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    flex-direction: column;
+
+    height: 70vh;
+    color: #fff;
+}
+
+.servicos{
+    width: 30vw;
+    word-break: break-all;
+}
+
+.voltar{
+    cursor: pointer;
+    width: 100px;
+
+    color: #fff;
+    margin: 1.5rem 2rem;
+    
+    display: flex;
+    align-items: center;
+}
+
+.voltar ion-icon{
+    font-size: 1.3rem;
+}
+
+.voltar a{
+    color: #fff;
+    text-decoration: none;
+}
+
+.informações{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.nome{
+    margin-top: 2rem;
+}
+
+.infoAdd{
+    margin-top: 2rem;
+}
+
+.infoAdd ion-icon{
+    cursor: pointer;
+    color: #fff;
+    font-size: 1.8rem;
+}
+
+@media (max-width:700px){
+    .servicos{
+        width: 60vw;
+        word-break: break-all;
+    }
+
+    .viewProletario{
+        margin-top: 10rem;
+    }
+    
+    .viewEmpresa{
+        margin-top: 10rem;
+    }
+
+}

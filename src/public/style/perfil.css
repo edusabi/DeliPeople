@@ -1,0 +1,54 @@
+.perfilContainer img{
+    width: 150px;
+    border-radius: 50%;
+}
+
+.perfilContainer{
+    color: #fff;
+    letter-spacing: 1px;
+    height: 100vh;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.perfilGoogle{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 8px; 
+}
+
+
+.perfilCad{
+    width: 25vw;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.perfilCad span{
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+
+.servicos{
+    word-break: break-all;
+}
+
+@media (max-width: 700px){
+    .perfilContainer{
+        flex-direction: column;
+        height: 90vh;
+    }
+
+    .perfilCad{
+        align-items: center;
+        justify-content: center;
+        width: 80vw;
+    }
+
+    .servicos{
+        word-break: normal;
+    }
+}

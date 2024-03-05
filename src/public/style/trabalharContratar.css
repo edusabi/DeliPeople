@@ -1,0 +1,37 @@
+.empresas{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    height: 20vh;
+
+    margin: 2rem 0;
+    text-align: center;
+    color: #fff;
+}
+
+.titleV{
+    text-align: center;
+    margin-top: 1rem;
+    color: #fff;
+}
+
+.pessoas{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+
+    height: 20vh;
+
+    margin: 2rem 0;
+    text-align: center;
+    color: #fff;
+}
+
+.btnsTC{
+    cursor: pointer;
+    background-color: #00008b;
+    padding: .7rem 1rem;
+    color: #fff;
+    border: none;
+}

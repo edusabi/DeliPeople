@@ -1,0 +1,28 @@
+<%- include('../partials/head') %>
+<%- include('../partials/navbar') %>
+
+<div class="voltar">
+    <a href="/users/contratar"><ion-icon name="chevron-back-outline"></ion-icon></a>
+    <a href="/users/contratar"><h3>Voltar</h3></a>
+</div>
+
+
+<div class="viewProletario">
+    <h2 class="nome"><%- proletario.nome  %></h2>
+
+    <div class="informações">
+        <p>Estado: <%- proletario.estado %></p>
+        <p>Cidade: <%- proletario.cidade %></p>
+        <p>Telefone: <%- proletario.telefone %></p>
+        <p>Profissão: <%- proletario.profissao %></p>
+        <p class="servicos">Serviços: <%- proletario.servicos %></p>
+
+    </div>
+
+</div>
+
+
+
+<%- include('../partials/footer') %>
+
+<script src="/js/navbar.js"></script>

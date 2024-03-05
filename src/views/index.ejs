@@ -1,0 +1,42 @@
+<%- include('./partials/head') %>
+<%- include('./partials/navbar') %>
+
+<body onload="preCarregamento()">
+    
+<main>
+    
+    <div class="clientes-empresas">
+        <div class="buttons-container">
+
+            <% if(empresa){ %>
+                <a href="/users/contratar"><button>Quero contratar</button></a>
+                
+            <% }%>
+                
+                <% if(proletario){ %>
+                    <a href="/users/trabalhar"><button>Quero trabalhar</button></a>
+                    
+                <% }%>
+
+                <% if(!proletario && !empresa){ %>
+                    <a href="/users/cadastroEmpresa"><button>Quero contratar</button></a>
+                    <a href="/users/cadastroProletario"><button>Quero trabalhar</button></a>                    
+                    <% }%>
+                    
+                    <a href="/chatAll"><button>Ir para o chat All</button></a>                    
+
+        </div>
+    </div>
+
+</main>
+
+<div class="pre-carregamento">
+    <p>A página está carregando para um melhor aproveitamento!</p>
+    <div class="carregamento"></div>
+</div>
+
+<script src="/js/tell.js"></script>
+
+<script src="/js/navbar.js"></script>
+
+<%- include('./partials/footer') %>

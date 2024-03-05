@@ -1,0 +1,47 @@
+<%- include('../partials/head') %>
+<%- include('../partials/navbar') %>
+
+<div class="perfilContainer">
+
+<div class="perfilGoogle">
+    <p><%- user.name  %></p>
+    <p><%- user.email  %></p>
+    <img src="<%- user.avatar  %>" alt="">
+</div>
+
+<div class="perfilCad">
+    <h2>Seu cadastro</h2>
+<% if(empresa){ %>
+
+    <p><span>Seu nome:</span> <%- empresa.nome %></p>
+    <p><span>E-mail: </span> <%- empresa.email %></p>
+    <p><span>Estado:</span> <%- empresa.estado %></p>
+    <p><span>Cidade:</span> <%- empresa.cidade %></p>
+    <p><span>Telefone:</span> <%- empresa.telefone %></p>
+    <p><span>Rua:</span> <%- empresa.rua %></p>
+    <p><span>Número:</span> <%- empresa.numero %></p>
+    <p class="servicos"><span>Serviços:</span> <%- empresa.servicos %></p>
+
+    <% }else{ %>
+        <p>Ainda não possui cadastro, vá para área de trabalho e escolha um</p>
+        <% } %>
+        
+        <% if(proletario){ %>
+            
+            <p><span>Seu nome:</span> <%- proletario.nome %></p>
+            <p><span>E-mail:</span> <%- proletario.email %></p>
+            <p><span>Estado:</span> <%- proletario.estado %></p>
+            <p><span>Cidade:</span> <%- proletario.cidade %></p>
+            <p><span>Telefone:</span> <%- proletario.telefone %></p>
+            <p><span>Profissão:</span> <%- proletario.profissao %></p>
+            <p class="servicos"><span>Serviços:</span> <%- proletario.servicos %></p>
+            <% } %>
+            
+        </div>
+        
+    </div>
+
+
+<%- include('../partials/footer') %>
+
+<script src="/js/navbar.js"></script>

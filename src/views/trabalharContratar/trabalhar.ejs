@@ -1,0 +1,21 @@
+<%- include('../partials/head') %>
+<%- include('../partials/navbar') %>
+
+
+<h1 class="titleV">Empresas</h1>
+
+<% empresa.forEach(pessoas => {%>
+    
+<div class="empresas">
+    <p>Nome: <%- pessoas.nome %></p>
+    <p>Estado: <%- pessoas.estado %></p>
+    <div>
+        <a href="/users/trabalhar/:<%-pessoas._id%>"> <button class="btnsTC">Dar uma olhada</button></a>
+    </div>
+
+</div>
+
+<% }); %>
+<%- include('../partials/footer') %>
+
+<script src="/js/navbar.js"></script>

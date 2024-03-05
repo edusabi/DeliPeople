@@ -1,0 +1,70 @@
+<%- include('./partials/head') %>
+<%- include('./partials/navbar') %>
+
+<div class="containerChat">
+
+<div class="containerInside">
+
+    <div class="messages" id="messageBox-0"></div>
+
+
+
+
+
+
+
+
+
+
+<!-- 
+    <section class="ScreenMessages">
+
+        <div class="divMessages">
+
+            <div>
+                <span class="nome"><p>Enviando mensagem para a empresa: </p></span>
+            </div>
+
+            <div class="messages" id="messageBox-0">
+              
+            </div>
+
+        </div>
+
+        <div class="submit">
+            <form action="" id="chat">
+                <label for="">
+                    <input type="text" name="username" placeholder="Digite seu nome:" id="author" value="<%= user.name %>">
+                    <input type="text" name="message" placeholder="Mande uma mensagem:" id="message-room-0">
+                    <input type="hidden" name="message-chat-user-id" value="0">
+                    <button type="submit">Enviar</button>
+                </label>
+            </form>
+        </div>
+
+
+    </section> -->
+
+
+
+
+
+    
+</div>
+<div class="enviarMessage">
+    <form id="chat">
+        <input type="text" name="username" value="<%- user.name %>">
+        <input type="text" name="message" placeholder="Mensagem" id="message-room-0">
+        <input type="hidden" name="message-chat-user-id" value="0" placeholder="Mensagem">
+
+        
+        <button type="submit">Enviar</button>
+    </form>
+</div>
+
+</div>
+
+<script src="/js/socket.js"></script>
+<script src="/js/navbar.js"></script>
+
+<%- include('./partials/footer') %>

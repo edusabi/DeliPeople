@@ -1,0 +1,42 @@
+<%- include('../partials/head') %>
+<%- include('../partials/navbar') %>
+
+<div class="proletario">
+    <h1>Cadastro do proletario</h1>
+    <form action="/users/cadastroProletario" method="POST">
+        <label for="name"><input type="text" name="nome" placeholder="Nome da pessoa" required></label>
+
+        <label for="">
+            <select name="estado" id="estado" required>
+                <option value="">Escolha um estado</option>
+            </select>
+        </label>
+
+        <label for="">
+            <select name="cidade" id="cidade" required>
+                <option value="">Escolha uma cidade</option>
+            </select>
+        </label>
+
+        <label for="name"><input type="email" name="email" value="<%- user.email %>" placeholder="E-mail da pessoa" ></label>
+
+        <label for="name"><input type="text" name="telefone" maxlength="15" onkeyup="handlePhone(event)" placeholder="Telefone para contato" required></label>
+
+        <label for="name"><input maxlength="15" type="text" name="profissao" placeholder="Profissão principal" required></label>
+
+        <textarea name="servicos" placeholder="Quais tipos de serviços a pessoa realiza..." required cols="50" rows="10"></textarea>
+
+        <button type="submit">Enviar cadastro</button>
+    </form>
+</div>
+
+
+<script src="/js/estados.js"></script>
+<script src="/js/tell.js"></script>
+
+<script src="/js/navbar.js"></script>
+
+<%- include('../partials/footer') %>
+
+</body>
+</html>

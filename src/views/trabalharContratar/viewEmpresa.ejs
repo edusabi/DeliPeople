@@ -1,0 +1,28 @@
+<%- include('../partials/head') %>
+<%- include('../partials/navbar') %>
+
+<div class="voltar">
+    <a href="/users/trabalhar"><ion-icon name="chevron-back-outline"></ion-icon></a>
+    <a href="/users/trabalhar"><h3>Voltar</h3></a>
+</div>
+
+<div class="viewEmpresa">
+
+    <h2 class="nome"><%- empresa.nome  %></h2>
+
+    <div class="informações">
+
+        <p>Estado: <%- empresa.estado %></p>
+        <p>Cidade: <%- empresa.cidade %></p>
+        <p>Telefone: <%- empresa.telefone %></p>
+        <p>Rua: <%- empresa.rua %></p>
+        <p>Número: <%- empresa.numero %></p>
+        <p class="servicos">Serviços: <%- empresa.servicos %></p>
+    </div>
+
+</div>
+
+
+<%- include('../partials/footer') %>
+
+<script src="/js/navbar.js"></script>
